@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
               {[
                 { Icon: Github, href: "https://github.com/aadizzzz" },
                 { Icon: Linkedin, href: "https://www.linkedin.com/in/aadizz8960/" },
-                { Icon: Mail, href: "mailto:contact@adityadhiman.com" } // Assuming a default mailto, but can be updated later
+                { Icon: Mail, href: "mailto:addhiman6@gmail.com" }
               ].map((item, i) => (
                 <motion.a
                   key={i}

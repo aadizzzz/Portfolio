@@ -28,7 +28,8 @@ const Footer: React.FC = () => {
           </motion.p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
-            <motion.button
+            <motion.a
+              href="mailto:addhiman6@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group flex items-center space-x-3 bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-2xl shadow-blue-600/20"
@@ -36,7 +37,7 @@ const Footer: React.FC = () => {
               <Mail className="w-5 h-5" />
               <span>Start a Conversation</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            </motion.a>
 
             <div className="flex items-center space-x-4">
               {[
