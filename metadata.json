@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Aditya Dhiman Portfolio",
+  "description": "High-end developer portfolio with advanced motion and Gemini AI.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
