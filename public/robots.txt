@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aadizzzz.github.io/sitemap.xml
+Sitemap: https://adityadhiman.vercel.app/sitemap.xml
