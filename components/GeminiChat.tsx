@@ -35,7 +35,7 @@ const GeminiChat: React.FC = () => {
   return (
     <>
       {/* Trigger Button */}
-      <button 
+      <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-8 right-8 w-16 h-16 bg-blue-600 hover:bg-blue-500 text-white rounded-full flex items-center justify-center shadow-2xl shadow-blue-900/40 z-40 transition-transform active:scale-95"
       >
@@ -43,7 +43,7 @@ const GeminiChat: React.FC = () => {
       </button>
 
       {/* Chat Window */}
-      <div className={`fixed bottom-28 right-8 w-[380px] h-[500px] glass rounded-3xl z-50 transition-all duration-300 origin-bottom-right ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
+      <div className={`fixed bottom-24 right-4 sm:bottom-28 sm:right-8 w-[calc(100vw-32px)] sm:w-[380px] h-[500px] glass rounded-3xl z-50 transition-all duration-300 origin-bottom-right ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
         {/* Header */}
         <div className="p-6 border-b border-white/10 flex justify-between items-center">
           <div className="flex items-center space-x-3">
@@ -81,14 +81,14 @@ const GeminiChat: React.FC = () => {
         {/* Footer Input */}
         <div className="p-6 pt-0">
           <div className="relative">
-            <input 
+            <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder="Ask me something..."
               className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             />
-            <button 
+            <button
               onClick={handleSend}
               className="absolute right-2 top-2 p-1.5 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors"
             >

@@ -32,11 +32,11 @@ const Footer: React.FC = () => {
               href="mailto:addhiman6@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group flex items-center space-x-3 bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-2xl shadow-blue-600/20"
+              className="group flex items-center justify-center space-x-3 bg-blue-600 text-white px-6 py-4 sm:px-10 sm:py-5 rounded-2xl font-bold transition-all shadow-2xl shadow-blue-600/20 w-full sm:w-auto"
             >
-              <Mail className="w-5 h-5" />
-              <span>Start a Conversation</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Mail className="w-5 h-5 flex-shrink-0" />
+              <span className="whitespace-nowrap">Start a Conversation</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </motion.a>
 
             <div className="flex items-center space-x-4">
