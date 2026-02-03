@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5 }}
-            className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl glass-card border-blue-500/20 text-blue-400 text-[10px] font-black tracking-[0.3em] uppercase mb-8"
+            className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl glass-card border-blue-500/20 text-blue-400 text-[10px] font-black tracking-[0.3em] uppercase mb-8 mt-24 lg:mt-0"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
       <motion.div
         animate={{ y: [0, 15, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 cursor-pointer opacity-40 hover:opacity-100 transition-opacity"
+        className="absolute bottom-10 left-0 right-0 mx-auto w-fit flex flex-col items-center space-y-2 cursor-pointer opacity-40 hover:opacity-100 transition-opacity"
         onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <span className="text-[10px] font-black uppercase tracking-[0.5em] vertical-rl">Scroll</span>

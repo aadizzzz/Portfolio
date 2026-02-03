@@ -59,8 +59,9 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-slate-500 font-medium tracking-wider text-xs uppercase">
-              Designed & Engineered by <span className="text-white">Aditya Dhiman</span>
+            <div className="text-slate-500 font-medium tracking-wider text-xs uppercase flex flex-col md:block text-center md:text-left">
+              <span>Designed & Engineered by</span>
+              <span className="text-white md:ml-1 mt-1 md:mt-0 block md:inline">Aditya Dhiman</span>
             </div>
             <div className="flex items-center space-x-8 text-xs font-bold text-slate-400 uppercase tracking-widest">
               <a href="#" className="hover:text-blue-400 transition-colors">Privacy</a>
