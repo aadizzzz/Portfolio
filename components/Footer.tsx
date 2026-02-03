@@ -64,8 +64,6 @@ const Footer: React.FC = () => {
               <span className="text-white md:ml-1 mt-1 md:mt-0 block md:inline">Aditya Dhiman</span>
             </div>
             <div className="flex items-center space-x-8 text-xs font-bold text-slate-400 uppercase tracking-widest">
-              <a href="#" className="hover:text-blue-400 transition-colors">Privacy</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">Terms</a>
               <a href="#" className="hover:text-blue-400 transition-colors">Resume</a>
             </div>
           </div>
