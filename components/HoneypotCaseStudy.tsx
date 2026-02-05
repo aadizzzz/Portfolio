@@ -33,14 +33,14 @@ const HoneypotCaseStudy: React.FC = () => {
                     </Link>
                 </motion.div>
 
-                {/* Hero Section */}
+                // Hero Section
                 <section className="mb-24">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="flex flex-col lg:flex-row gap-16 items-start"
+                        className="flex flex-col lg:flex-row gap-16 items-center lg:items-start"
                     >
-                        <div className="lg:w-1/2 space-y-8">
+                        <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
                             <div className="inline-block px-4 py-1.5 rounded-full glass-card border-green-500/20 text-green-400 text-xs font-bold tracking-widest uppercase">
                                 Cybersecurity & AI
                             </div>
@@ -51,7 +51,7 @@ const HoneypotCaseStudy: React.FC = () => {
                                 An intelligent extraction system using Supabase Edge Functions and Gemini AI to engage scammers and extract critical intelligence like UPI IDs and bank details.
                             </p>
 
-                            <div className="flex flex-wrap gap-4 pt-4">
+                            <div className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
                                 <a
                                     href="https://honeypot-omega.vercel.app/"
                                     target="_blank"
@@ -249,7 +249,7 @@ const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title
         viewport={{ once: true, margin: "-100px" }}
     >
         <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <div className="w-2 h-8 bg-gradient-to-b from-green-500 to-emerald-500 rounded-full" />
+            <div className="hidden md:block w-2 h-8 bg-gradient-to-b from-green-500 to-emerald-500 rounded-full" />
             {title}
         </h2>
         {children}

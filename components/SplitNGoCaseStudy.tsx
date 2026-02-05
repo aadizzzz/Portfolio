@@ -34,14 +34,14 @@ const SplitNGoCaseStudy: React.FC = () => {
                     </Link>
                 </motion.div>
 
-                {/* Hero Section */}
+                // Hero Section
                 <section className="mb-24">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="flex flex-col lg:flex-row gap-16 items-start"
+                        className="flex flex-col lg:flex-row gap-16 items-center lg:items-start"
                     >
-                        <div className="lg:w-1/2 space-y-8">
+                        <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
                             <div className="inline-block px-4 py-1.5 rounded-full glass-card border-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase">
                                 Transport & Logistics
                             </div>
@@ -52,7 +52,7 @@ const SplitNGoCaseStudy: React.FC = () => {
                                 An intelligent journey optimizer tackling Indian Railways' complexity. Finding confirmed seats through smart split-ticketing and multi-train layover logic.
                             </p>
 
-                            <div className="flex flex-wrap gap-4 pt-4">
+                            <div className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
                                 <a
                                     href="https://splitngo.vercel.app/"
                                     target="_blank"
@@ -106,7 +106,7 @@ const SplitNGoCaseStudy: React.FC = () => {
                             <div className="w-12 h-12 mx-auto bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400 mb-4">
                                 <stat.icon className="w-6 h-6" />
                             </div>
-                            <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
+                            <div className="text-xl md:text-2xl font-bold text-white mb-1 break-words">{stat.value}</div>
                             <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{stat.label}</div>
                         </motion.div>
                     ))}
@@ -262,7 +262,7 @@ const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title
         viewport={{ once: true, margin: "-100px" }}
     >
         <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <div className="w-2 h-8 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full" />
+            <div className="hidden md:block w-2 h-8 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full" />
             {title}
         </h2>
         {children}
