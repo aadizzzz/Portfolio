@@ -47,8 +47,8 @@ export const PROJECTS: Project[] = [
     title: "ToolBox",
     description: "A minimalist, all-in-one file utility platform that enhances productivity. Includes multiple file conversion and utility tools with a clean UI.",
     image: toolboxImage,
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "#",
+    tags: ["TypeScript", "React Native", "Secure CPU"],
+    link: "/case-study/toolbox",
     externalLink: "https://aadizztoolbox.vercel.app/"
   },
   {
