@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import SplitNGoCaseStudy from './components/SplitNGoCaseStudy';
+import HoneypotCaseStudy from './components/HoneypotCaseStudy';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study/splitngo" element={<SplitNGoCaseStudy />} />
+        <Route path="/case-study/honeypot" element={<HoneypotCaseStudy />} />
       </Routes>
     </Router>
   );

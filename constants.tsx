@@ -15,6 +15,7 @@ import {
 import { Project, SkillCategory, PhilosophyItem } from './types';
 import splitngoImage from './assets/splitngo.png';
 import toolboxImage from './assets/toolbox.png';
+import honeypotImage from './assets/scamhoneypot.png';
 
 
 export const PHILOSOPHY: PhilosophyItem[] = [
@@ -61,6 +62,15 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "3",
+    title: "Scam Honeypot Intelligence Extraction System",
+    description: "Uses Supabase Edge Functions & Gemini AI for Chat to extract intelligence links of UPI ID's Phone Number Bank Account IFSC Code Email address etc.",
+    image: honeypotImage,
+    tags: ["Supabase", "Gemini AI", "Edge Functions", "React"],
+    link: "/case-study/honeypot",
+    externalLink: "https://honeypot-omega.vercel.app/"
+  },
+  {
+    id: "4",
     title: "Best Rated Movies",
     description: "Real-time movie tracker fetching data from IMDb, providing users with updated, high-quality movie recommendations.",
     visual: (
