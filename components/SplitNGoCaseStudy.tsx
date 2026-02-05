@@ -91,7 +91,7 @@ const SplitNGoCaseStudy: React.FC = () => {
                 <section className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24">
                     {[
                         { label: "Algorithms", value: "BFS & A*", icon: Map },
-                        { label: "Stack", value: "MERN", icon: Database },
+                        { label: "Stack", value: "Supabase", icon: Database },
                         { label: "Focus", value: "Optimization", icon: Zap },
                         { label: "Platform", value: "Web", icon: Globe },
                     ].map((stat, i) => (
@@ -167,9 +167,9 @@ const SplitNGoCaseStudy: React.FC = () => {
                             </p>
                             <div className="grid md:grid-cols-2 gap-8">
                                 <div>
-                                    <h4 className="font-bold text-white mb-4 text-lg">Backend Engines</h4>
+                                    <h4 className="font-bold text-white mb-4 text-lg">Backend & Data</h4>
                                     <ul className="space-y-3">
-                                        {['Graph Construction Module', 'BFS Pathfinding Engine', 'Split-Route Detection', 'Seat Availability Heuristics'].map((item, i) => (
+                                        {['Supabase (PostgreSQL)', 'Edge Functions', 'Graph Algorithms (TypeScript)', 'Admin Dashboard'].map((item, i) => (
                                             <li key={i} className="flex items-center space-x-3 text-slate-400">
                                                 <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                                                 <span>{item}</span>
@@ -198,8 +198,8 @@ const SplitNGoCaseStudy: React.FC = () => {
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 <FutureCard icon={Smartphone} title="TTE Portal" desc="Real-time verification & seat management" />
-                                <FutureCard icon={Layout} title="Ticketing" desc="Complete booking & PNR generation" />
-                                <FutureCard icon={Zap} title="AI Integration" desc="Predictive confirmation algorithms" />
+                                <FutureCard icon={Layout} title="Admin Section" desc="Secure database management & analytics" />
+                                <FutureCard icon={Zap} title="Supabase Auth" desc="Secure user login & history text" />
                                 <FutureCard icon={Server} title="Offline Mode" desc="Static JSON fallback for reliability" />
                             </div>
                         </Section>
@@ -222,7 +222,7 @@ const SplitNGoCaseStudy: React.FC = () => {
                                 <div>
                                     <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Tech Stack</div>
                                     <div className="flex flex-wrap gap-2 mt-2">
-                                        {['React', 'Node.js', 'Express', 'Tailwind', 'Graph Algos'].map(tag => (
+                                        {['React', 'Supabase', 'TypeScript', 'Tailwind', 'Graph Algos'].map(tag => (
                                             <span key={tag} className="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-blue-300 border border-white/5">
                                                 {tag}
                                             </span>
@@ -249,8 +249,8 @@ const SplitNGoCaseStudy: React.FC = () => {
                 <div className="mt-24 pt-12 border-t border-white/5 text-center text-slate-600 text-sm">
                     <p>© 2026 Aditya Dhiman. All Rights Reserved.</p>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

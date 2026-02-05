@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     title: "SplitNGo",
     description: "An intelligent journey planner using graph algorithms for optimal route finding, simplifying complex travel logistics.",
     image: splitngoImage,
-    tags: ["Python", "C++", "RESTful APIs"],
+    tags: ["React", "Supabase", "TypeScript", "PostgreSQL"],
     link: "/case-study/splitngo",
     externalLink: "https://splitngo.vercel.app/"
   },
