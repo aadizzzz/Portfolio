@@ -34,7 +34,7 @@ const ToolboxCaseStudy: React.FC = () => {
                     </Link>
                 </motion.div>
 
-                // Hero Section
+                {/* // Hero Section */}
                 <section className="mb-24">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
