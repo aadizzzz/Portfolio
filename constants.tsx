@@ -16,7 +16,7 @@ import { Project, SkillCategory, PhilosophyItem } from './types';
 import splitngoImage from './assets/splitngo.png';
 import toolboxImage from './assets/toolbox.png';
 import honeypotImage from './assets/scamhoneypot.png';
-
+import gymosImage from './assets/gymos.png';
 
 export const PHILOSOPHY: PhilosophyItem[] = [
   {
@@ -93,6 +93,15 @@ export const PROJECTS: Project[] = [
     ),
     tags: ["React.js", "GraphQL", "API Integration"],
     link: "#"
+  },
+  {
+    id: "5",
+    title: "Gym OS",
+    description: "A smart automation OS. Real Insights. Zero Chaos. The all-in-one OS designed to scale modern fitness centers without the headache.",
+    image: gymosImage,
+    tags: ["React", "Automation", "Dashboard"],
+    link: "/case-study/gym-os",
+    externalLink: "https://smart-gym-1nm.pages.dev/"
   }
 ];
 
