@@ -142,7 +142,7 @@ const GymOSCaseStudy: React.FC = () => {
                             <p className="mb-6">
                                 Gym OS is a cloud-based, multi-tenant Gym Management System built using a serverless architecture. It functions as the operational backbone of a gym by providing:
                             </p>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <SolutionCard title="Lifecycle Management" desc="Full tracking of members." icon={Users} />
                                 <SolutionCard title="Attendance Automation" desc="QR-based check-ins and logs." icon={CalendarCheck} />
                                 <SolutionCard title="Payment Tracking" desc="Digital logging and revenue dashboard." icon={CreditCard} />
@@ -157,7 +157,7 @@ const GymOSCaseStudy: React.FC = () => {
                             <div className="space-y-8">
                                 <div>
                                     <h3 className="text-xl font-bold text-white mb-4">4.1 Technology Stack</h3>
-                                    <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div className="glass-card p-5 rounded-xl border-white/5">
                                             <h4 className="text-emerald-400 font-semibold flex items-center gap-2 mb-3"><Layout className="w-4 h-4" /> Frontend</h4>
                                             <ul className="space-y-2 text-sm text-slate-400">
@@ -199,7 +199,7 @@ const GymOSCaseStudy: React.FC = () => {
                             <p className="mb-6">
                                 AI capabilities transform Gym OS from a mere management tool into a revenue optimization system.
                             </p>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="glass-card p-4 rounded-xl">
                                     <h5 className="font-bold text-white">Auto WhatsApp</h5>
                                     <p className="text-sm text-slate-400">Follow-ups and communication</p>
