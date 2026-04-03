@@ -17,6 +17,7 @@ import splitngoImage from './assets/splitngo.png';
 import toolboxImage from './assets/toolbox.png';
 import honeypotImage from './assets/scamhoneypot.png';
 import gymosImage from './assets/gymos.png';
+import trisutraImage from './assets/trisutra.png';
 
 export const PHILOSOPHY: PhilosophyItem[] = [
   {
@@ -102,6 +103,15 @@ export const PROJECTS: Project[] = [
     tags: ["React", "Automation", "Dashboard"],
     link: "/case-study/gym-os",
     externalLink: "https://smart-gym-1nm.pages.dev/"
+  },
+  {
+    id: "6",
+    title: "TriSutra Ayurveda",
+    description: "A full-stack Ayurveda e-commerce system with real-time order tracking, automated invoicing, and secure admin control. Designed for seamless business operations.",
+    image: trisutraImage,
+    tags: ["React", "Node.js", "Supabase", "Automation"],
+    link: "/case-study/trisutra",
+    externalLink: "https://trisutra.vercel.app/"
   }
 ];
 

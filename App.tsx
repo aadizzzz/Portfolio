@@ -6,6 +6,7 @@ import SplitNGoCaseStudy from './components/SplitNGoCaseStudy';
 import ToolboxCaseStudy from './components/ToolboxCaseStudy';
 import HoneypotCaseStudy from './components/HoneypotCaseStudy';
 import GymOSCaseStudy from './components/GymOSCaseStudy';
+import TriSutraCaseStudy from './components/TriSutraCaseStudy';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route path="/case-study/toolbox" element={<ToolboxCaseStudy />} />
         <Route path="/case-study/honeypot" element={<HoneypotCaseStudy />} />
         <Route path="/case-study/gym-os" element={<GymOSCaseStudy />} />
+        <Route path="/case-study/trisutra" element={<TriSutraCaseStudy />} />
       </Routes>
     </Router>
   );
