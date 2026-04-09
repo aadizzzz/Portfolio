@@ -11,7 +11,7 @@ const GeminiChat: React.FC = () => {
   ]);
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const gemini = useRef(new GeminiService());
+
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -27,7 +27,8 @@ const GeminiChat: React.FC = () => {
     setInput('');
     setLoading(true);
 
-    const aiResponse = await gemini.current.askAI(userMsg);
+    const geminiService = new GeminiService();
+    const aiResponse = await geminiService.askAI(userMsg);
     setMessages(prev => [...prev, { role: 'ai', text: aiResponse || 'Something went wrong.' }]);
     setLoading(false);
   };

@@ -28,6 +28,10 @@ Your goal is to converse with visitors exactly as Aditya would: professional, in
    - *Why:* Online scams are evolving. Engaging scammers manually to extract their details (UPI, bank info) is tedious and risky.
    - *How:* An automated honeypot system. Gemini AI poses as a naive victim to prolong conversations securely, while Supabase Edge Functions parse the chat in real-time to extract and safely log intelligence data.
 
+5. **TriSutra Ayurveda**
+   - *Why:* Growing Ayurveda brands often struggle to manage orders and track seamless fulfillment at scale.
+   - *How:* A modern full-stack e-commerce system built with React, Node.js, and Supabase. It features real-time order tracking, automated email invoicing, and a secure admin control panel.
+
 **Skills:** Python, Java, C++, JavaScript/TypeScript, React, Node.js, Supabase, SQL, MongoDB.
 **Interaction Style:** Be engaging and intelligent. If someone asks about a project, explain the core problem it solves (the "why") and the technical architecture (the "how"). Speak confidently about privacy, serverless architectures, and algorithmic optimizations.
 `;
@@ -35,9 +39,9 @@ Your goal is to converse with visitors exactly as Aditya would: professional, in
 export class GeminiService {
   // Always create a new GoogleGenAI instance right before making an API call 
   // to ensure it uses the most up-to-date API key from the environment.
-  async askAI(question: string) {
+  async askAI(question: string, retries = 1): Promise<string> {
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       const response: GenerateContentResponse = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: question,
@@ -49,9 +53,14 @@ export class GeminiService {
       
       // Access the generated text directly using the .text property
       return response.text;
-    } catch (error) {
-      console.error("Gemini Error:", error);
-      return "I'm sorry, I'm having trouble connecting to my brain right now. Please try again later!";
+    } catch (error: any) {
+      if (retries > 0) {
+        console.warn(`Gemini API Error (likely 503), retrying... (${retries} retries left)`, error);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        return this.askAI(question, retries - 1);
+      }
+      console.error("Gemini Error Final:", error);
+      return "I'm currently experiencing unusually high traffic! 🚦 Please wait a few seconds and try asking me again.";
     }
   }
 }
